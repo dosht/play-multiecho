@@ -1,0 +1,15 @@
+@(message: String)
+
+@main("Welcome to Play 2.1") {
+  @message
+  <h2>ClientId: </h2>
+  <div>
+  	<form>
+	  	<input id="txt" type="text"></input>
+  		<input id="send" type="submit" value="send"></input>
+  		<input id="clear" type="button" value="clear"></input>
+  	</form>
+  	<ul id="output"></ul>
+  </div>
+  <script type="text/javascript" src="@routes.Assets.at("javascript/main.js")"></script>
+}
